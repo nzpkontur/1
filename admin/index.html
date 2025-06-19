@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель администратора - Нязепетровский Контур</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="admin-sidebar">
+            <div class="admin-logo">
+                <img src="../images/logo-white.png" alt="Нязепетровский Контур">
+            </div>
+            <nav class="admin-menu">
+                <ul>
+                    <li class="active"><a href="index.html">Главная</a></li>
+                    <li><a href="news/">Новости</a></li>
+                    <li><a href="events/">Мероприятия</a></li>
+                    <li><a href="gallery/">Галерея</a></li>
+                    <li><a href="feedback/">Обратная связь</a></li>
+                    <li><a href="#">Настройки</a></li>
+                    <li><a href="#" id="logout">Выйти</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="admin-main">
+            <header class="admin-header">
+                <h1>Панель администратора</h1>
+                <div class="admin-user">
+                    <span>Администратор</span>
+                    <img src="../images/user-icon.png" alt="Пользователь">
+                </div>
+            </header>
+
+            <section class="admin-dashboard">
+                <div class="dashboard-cards">
+                    <div class="dashboard-card">
+                        <h3>Новые новости</h3>
+                        <p class="count">5</p>
+                        <a href="news/" class="btn">Управление</a>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Предстоящие события</h3>
+                        <p class="count">3</p>
+                        <a href="events/" class="btn">Управление</a>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Новые сообщения</h3>
+                        <p class="count">12</p>
+                        <a href="feedback/" class="btn">Управление</a>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Медиафайлы</h3>
+                        <p class="count">24</p>
+                        <a href="gallery/" class="btn">Управление</a>
+                    </div>
+                </div>
+
+                <div class="quick-actions">
+                    <h2>Быстрые действия</h2>
+                    <div class="actions-grid">
+                        <button class="action-btn" onclick="location.href='news/add.html'">
+                            Добавить новость
+                        </button>
+                        <button class="action-btn" onclick="location.href='events/add.html'">
+                            Добавить событие
+                        </button>
+                        <button class="action-btn" onclick="location.href='gallery/upload.html'">
+                            Загрузить медиа
+                        </button>
+                        <button class="action-btn" onclick="location.href='settings.html'">
+                            Настройки сайта
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>
